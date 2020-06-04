@@ -21,11 +21,13 @@ cut = jieba.cut(text)
 string  = ' '.join(cut)
 # print(len(string))
 
+img = Image.open(r'tree.jpg')   #打开遮罩图片
+img_array = np.array(img)   #将图片转化为数组
 
 # Generate a word cloud image
 wc = WordCloud(
     background_color='white',
-    # mask=
+    mask=img_array,
     font_path = r"Hiragino Sans GB.ttc"      #字体
 )
 wc.generate(string)
