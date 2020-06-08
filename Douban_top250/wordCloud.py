@@ -3,6 +3,7 @@
 #@Software: PyCharm
 
 import jieba        #分词
+from jieba import analyse
 from matplotlib import pyplot as plt    #绘图，数据可视化
 from wordcloud import WordCloud         #词云
 from PIL import Image                   #图片处理
@@ -16,17 +17,23 @@ text = ""
 for item in  table.col_values(6):
     text = text + item
 
-#分词
-cut = jieba.cut(text)
-string  = ' '.join(cut)
+#分词，top50关键字
+tags = jieba.analyse.extract_tags(text, topK=50, withWeight=False)
+# cut = jieba.cut(text)
+# print(type(cut))
+string  = ' '.join(tags)
 # print(len(string))
+print(string)
 
 img = Image.open(r'tree.jpg')   #打开遮罩图片
 img_array = np.array(img)   #将图片转化为数组
 
+stopwords = set('')
+stopwords.update(['电影', '我们', '一个', '不会', '不要', '就是', '这样', '永远', '不是'])
 # Generate a word cloud image
 wc = WordCloud(
     background_color='white',
+    stopwords=stopwords,
     mask=img_array,
     font_path = r"Hiragino Sans GB.ttc"      #字体
 )
