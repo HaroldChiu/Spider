@@ -99,7 +99,7 @@ def askURL(url):
     try:
         response = urllib.request.urlopen(request)
         html  = response.read().decode("utf-8")
-        print(html)
+        # print(html)
     except urllib.error.URLError as e:
         if hasattr(e, "code"):
             print(e.code)
