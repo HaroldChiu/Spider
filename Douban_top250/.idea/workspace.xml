@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="94a17fa5-829b-4de4-8555-f3d705e73d53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/douban_movie_top250.xls" beforeDir="false" afterPath="$PROJECT_DIR$/douban_movie_top250.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +38,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../douban" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -151,7 +149,9 @@
       <workItem from="1591091362613" duration="243000" />
       <workItem from="1591093980974" duration="7137000" />
       <workItem from="1591245865475" duration="1086000" />
-      <workItem from="1591518158410" duration="4921000" />
+      <workItem from="1591518158410" duration="6759000" />
+      <workItem from="1592569096360" duration="1123000" />
+      <workItem from="1592572032847" duration="79000" />
     </task>
     <servers />
   </component>
